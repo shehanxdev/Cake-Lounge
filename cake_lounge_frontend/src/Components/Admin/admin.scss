@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway+Dots&display=swap");
+
+:root {
+  --white: #fff;
+  --primary-pink: #ff5c8d;
+  --primary-grey: #ffffffb6;
+  --primary-blue: #0d6efd;
+}
+body a {
+  font: normal 400 20px/30px "Roboto", sans-serif !important;
+}
+body a:hover {
+  color: var(--primary-blue) !important;
+}
+button {
+  background-color: var(--primary-blue) !important;
+  color: var(--white) !important;
+  border: 0 !important;
+  outline: none;
+  padding: 10px !important;
+  display: block;
+  min-width: 90px !important;
+}
+.custom-border {
+  border: 1px solid rgba(0, 0, 0, 0.459);
+}
+//Login form
+.custom_admin_login_page {
+  height: 100vh !important;
+}
+
+.admin_login_backdrop {
+  background-color: rgba(0, 0, 0, 0.918) !important;
+}
+.admin_login_forgot_password {
+  font-size: 15px !important;
+}
+//Dashboard
+/*Admin post login header*/
+.custom_admin_post_login_header_container {
+  z-index: 100;
+}
+.custom_admin_post_login_header {
+  background-color: var(--primary-pink);
+  padding: 0 15px 0 15px;
+}
+.custom_admin_post_login_header h2[class="h2"] {
+  padding: 10px;
+  color: var(--white);
+  font: bold 30px "Pacifico", cursive;
+}
+
+.custom_admin_post_login_header_icons {
+  height: fit-content;
+  align-items: center;
+}
+
+.admin_post_login_header_notification {
+  top: 56px;
+  right: 62px;
+  padding: 30px;
+  min-width: 250px;
+  text-align: center;
+  z-index: 200;
+}
+.admin_post_login_header_notification div {
+  // background-color: #4bb9ec7a;
+  // flex-basis: 10px;
+  transition: 0.3s;
+  text-align: start;
+}
+
+.admin_post_login_header_notification div:hover {
+  background-color: #ff5c8d57;
+}
+
+.admin_post_login_header_notification span {
+  cursor: pointer;
+}
+//Admin dashboard
+
+.admin_dashboard_boxed_container {
+  border-radius: 10px;
+}
+#admin_dashboard_spacer_top {
+  margin-top: 10px !important;
+}
+#admin_dashboard_spacer_bottom {
+  margin-bottom: 50px !important;
+}
+.custom_admin_dashboard_side_nav {
+  background-color: var(--primary-grey);
+  width: 17% !important;
+}
+.custom_admin_dashboard_side_nav img[alt="user_profile_image"] {
+  aspect-ratio: 1/1;
+  width: 30%;
+}
+.custom_admin_dashboard_side_nav h4 {
+  font-size: 20px !important ;
+}
+.custom_admin_dashboard_side_nav div span {
+  font-size: 15px;
+  color: gray;
+}
+//admin_dashboard_overview_chart
+.admin_dashboard_overview_container {
+  margin: 100px 0px 0px 350px !important;
+}
+.admin_dashboard_overview_chart {
+  width: 60vw !important;
+  margin: auto;
+  display: block;
+}
+
+/*admin user delete*/
+.custom_admin_dashboard_all_users_preview {
+  min-height: 50%;
+  width: 40%;
+  border-radius: 14px;
+}
+.custom_admin_dashboard_delete_button:hover {
+  background-color: red !important;
+}
+
+//admin dashboard analytics
+.admin_dahsboard_analytics {
+  margin-left: 350px !important;
+  margin-top: 100px !important;
+}
+.admin_dahsboard_analytics button {
+  align-self: flex-end;
+}
+.admin_dahsboard_analytics .admin_dashboard_boxed_container {
+  width: 85% !important;
+  margin: auto !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.admin_dashboard_analytics-socialmedia-bar span {
+  font-size: 12px !important;
+}
+.admin_dahsboard_analytics .chartWrapper {
+  width: 35% !important;
+
+  margin-top: 40px;
+}
+.admin_dahsboard_analytics_vetical_bar {
+  width: fit-content !important;
+  margin-top: 100px !important;
+}
+.admin_dahsboard_analytics_vetical_bar div {
+  width: 50vw !important;
+}
+.admin_dashboard_analytics_speed_dialer button {
+  min-width: initial !important;
+  margin-right: 0px !important;
+  background-color: var(--primary-pink) !important;
+}
+//custom_admin_log_new_log
+.custom_admin_log {
+  min-height: 100vh !important;
+  margin-right: 19px !important;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+}
+
+.custom_admin_log_preview {
+  background-color: rgba(211, 211, 211, 0.596);
+  height: 100%;
+}
+.admin_log_preview_card {
+  transition: all 0.3s !important;
+}
+.admin_log_preview_card:hover {
+  background-color: var(--primary-pink) !important;
+  color: var(--white) !important;
+}
+.custom_admin_log_add_new {
+  background-color: var(--primary-pink);
+}
+
+.custom_admin_log_editor::before {
+  content: "";
+  height: 100%;
+  width: 20px;
+  background-color: red;
+}
+.custom_admin_log_editor {
+  background: repeating-linear-gradient(
+    to top,
+    white 0px,
+    white 29px,
+    #78a4e7e5 30px
+  );
+}
+.custom_admin_log_editor_save_btn_container {
+  margin-top: 180px !important;
+  width: fit-content;
+}
+.custom_admin_log_editor_save_btn_container {
+  background-color: var(--primary-pink) !important;
+  transition: 0.3s;
+}
+.custom_admin_log_editor_save_btn_container svg {
+  color: var(--white) !important;
+}
+.custom_admin_log_editor_save_btn_container:hover {
+  transform: scale(1.2);
+}
+
+.custom_admin_log_editor_content {
+  line-height: 30px;
+}
+.custom_admin_log_editor_content textarea {
+  background: transparent;
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+  outline: 0;
+}
+.custom_admin_dashboard_support {
+  margin-left: 350px !important;
+  margin-top: 100px !important;
+}
+
+.custom_admin_dashboard_support section {
+  position: relative;
+  display: block !important;
+  min-width: 100%;
+  min-height: 200px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: var(--white);
+}
+.custom_admin_dashboard_support section div {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #000103ad;
+  position: absolute;
+}
+//Special////////////////////
+.css-levciy-MuiTablePagination-displayedRows,
+.css-rtrcn9-MuiTablePagination-root .MuiTablePagination-selectLabel {
+  margin: 0%;
+}
+.MuiDataGrid-columnHeaderTitleContainer {
+  justify-content: start;
+  margin-left: 10px;
+}

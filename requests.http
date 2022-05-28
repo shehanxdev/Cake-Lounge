@@ -1,0 +1,51 @@
+POST http://localhost:8080/admin/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"password"
+}
+###
+GET http://localhost:8080/shops/add?name=name&password=password HTTP/1.1
+
+###
+POST http://localhost:8080/admin/dashboard HTTP/1.1
+Content-Type: application/json
+
+{
+    "admin":{"name":"name"},
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hlaGFuIENoYW51a2EiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwicm9sZSI6IlN1cGVyIFNlbmlvciBBZG1pbmlzdHJhdG9yIiwiaWF0IjoxNjUwMzMwODk3LCJleHAiOjE2NTAzNjY4OTd9.jnqjWHTtveaFboZQTFF5lFhlAWghIKs4LpTY5AL10Nw"
+}
+
+###
+POST http://localhost:8080/admin/dashboard/users HTTP/1.1
+
+###
+POST http://localhost:8080/admin/log/fetchLogs HTTP/1.1
+
+###
+POST http://localhost:8080/admin/log/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "log":{"content":"test content",
+    "date":"2022-04-2",
+    "flag":"Urgent"}
+}
+###
+POST http://localhost:8080/admin/log/update HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "log":{
+           "_id":"627eee3a11e7df456b610c09",
+           "content":"test content update",
+           "date":"2022-04-2",
+           "flag":"Urgent"
+           }
+}
+
+###
+POST http://localhost:8080/admin/notifications/fetch HTTP/1.1
+
